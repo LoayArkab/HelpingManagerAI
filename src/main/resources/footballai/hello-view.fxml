@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.footballai.HelloController">
+    <children>
+        <TableView fx:id="playerTable" layoutX="20.0" layoutY="60.0" prefHeight="500.0" prefWidth="760.0">
+            <columns>
+                <TableColumn prefWidth="250.0" text="Player Name" />
+                <TableColumn prefWidth="250.0" text="Team" />
+                <TableColumn prefWidth="200.0" text="Position" />
+            </columns>
+        </TableView>
+        <Label layoutX="20.0" layoutY="20.0" text="EPL AI Manager - Data Dashboard" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+        <Button layoutX="680.0" layoutY="20.0" text="Load Data" onAction="#onLoadData" />
+    </children>
+</AnchorPane>
